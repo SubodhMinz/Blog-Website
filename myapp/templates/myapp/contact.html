@@ -1,0 +1,17 @@
+{% extends 'myapp/base.html' %}
+{% block title %}Contact{% endblock title %}
+
+{% block contact %}
+<div class="container mt-2">
+    <div  style="background-color: rgb(114, 105, 105); margin:0 10rem; padding:1rem 2rem">
+        <form action="" method="POST">
+            {% csrf_token %}
+            {% for fm in form %}
+                {{ fm.label_tag }}
+                <p style="">{{fm}}</p> {{ fm.errors}}
+            {% endfor %}
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+{% endblock contact %}

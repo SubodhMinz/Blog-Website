@@ -1,0 +1,15 @@
+#homeCards{
+    display: flex;
+    flex-direction: row;
+}
+
+/* ----------Contact----------- */
+.formClass{
+    width: 45.5rem;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.desc{
+    height: 10rem;
+}

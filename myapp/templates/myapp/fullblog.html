@@ -1,0 +1,16 @@
+{% extends 'myapp/base.html' %}
+{% block title %}Blog{% endblock title %}
+
+{% block fullblog %}
+{% load static %}
+<div class="container">
+    <div class="card " style="margin : 2rem 8rem;">
+        <img src=" {{blog.img.url}} " height="400px" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h2>{{blog.title}}</h2>
+            <small><i>{{blog.date}}</i></small>
+            <p class="card-text">{{blog.desc}}</p>
+        </div>
+      </div>
+</div>
+{% endblock fullblog %}
